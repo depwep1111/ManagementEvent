@@ -34,6 +34,7 @@ class EventLine
         return EventLine(named: "Monday", includeEvents: events)
     }
     private class func Tuesday() -> EventLine { // lich thu 3
+    
         
         var events = [Event]()
         
