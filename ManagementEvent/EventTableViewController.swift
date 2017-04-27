@@ -16,34 +16,34 @@ class EventTableViewController: UITableViewController {
     }
     
     // data sourse
-    lazy var productLines: [ProductLine] = {
-        return ProductLine.productLines()
+    lazy var eventLines: [EventLine] = {
+        return EventLine.eventLines()
     }()
     //
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let productLine = productLines[section]
-        return productLine.name
+        let eventLine = eventLines[section]
+        return eventLine.name
     }
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int { // Danh sach 7 ngay
         // #warning Incomplete implementation, return the number of sections
-        return productLines.count
+        return eventLines.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { // danh sach cac su kien trong ngay
         // #warning Incomplete implementation, return the number of rows
-        let productLine = productLines[section]
-        return productLine.products.count
+        let eventLine = eventLines[section]
+        return eventLine.events.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { // set cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let productLine = productLines[indexPath.section]
-        let product = productLine.products[indexPath.row]
+        let eventLine = eventLines[indexPath.section]
+        let event = eventLine.events[indexPath.row]
         
-        cell.textLabel?.text = product.title
+        cell.textLabel?.text = event.title
         
         
         return cell
@@ -52,8 +52,8 @@ class EventTableViewController: UITableViewController {
     // delete row
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete{
-            let productLine = productLines[indexPath.section]
-            productLine.products.remove(at: indexPath.row)
+            let eventLine = eventLines[indexPath.section]
+            eventLine.events.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
         }
     }

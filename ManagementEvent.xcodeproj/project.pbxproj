@@ -15,8 +15,8 @@
 		3EB068D11EAD49EE009F9750 /* ManagementEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB068D01EAD49EE009F9750 /* ManagementEventTests.swift */; };
 		3EB068DC1EAD49EE009F9750 /* ManagementEventUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB068DB1EAD49EE009F9750 /* ManagementEventUITests.swift */; };
 		3EB068EA1EAD4A80009F9750 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB068E91EAD4A80009F9750 /* EventTableViewController.swift */; };
-		3EB068EE1EAD4B07009F9750 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB068EC1EAD4B07009F9750 /* Product.swift */; };
-		3EB068EF1EAD4B07009F9750 /* ProductLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB068ED1EAD4B07009F9750 /* ProductLine.swift */; };
+		3EB068EE1EAD4B07009F9750 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB068EC1EAD4B07009F9750 /* Event.swift */; };
+		3EB068EF1EAD4B07009F9750 /* EventLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB068ED1EAD4B07009F9750 /* EventLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		3EB068DB1EAD49EE009F9750 /* ManagementEventUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementEventUITests.swift; sourceTree = "<group>"; };
 		3EB068DD1EAD49EE009F9750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EB068E91EAD4A80009F9750 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
-		3EB068EC1EAD4B07009F9750 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		3EB068ED1EAD4B07009F9750 /* ProductLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductLine.swift; sourceTree = "<group>"; };
+		3EB068EC1EAD4B07009F9750 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		3EB068ED1EAD4B07009F9750 /* EventLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +136,8 @@
 		3EB068EB1EAD4B07009F9750 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3EB068EC1EAD4B07009F9750 /* Product.swift */,
-				3EB068ED1EAD4B07009F9750 /* ProductLine.swift */,
+				3EB068EC1EAD4B07009F9750 /* Event.swift */,
+				3EB068ED1EAD4B07009F9750 /* EventLine.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,8 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EB068BE1EAD49EE009F9750 /* ViewController.swift in Sources */,
-				3EB068EE1EAD4B07009F9750 /* Product.swift in Sources */,
-				3EB068EF1EAD4B07009F9750 /* ProductLine.swift in Sources */,
+				3EB068EE1EAD4B07009F9750 /* Event.swift in Sources */,
+				3EB068EF1EAD4B07009F9750 /* EventLine.swift in Sources */,
 				3EB068EA1EAD4A80009F9750 /* EventTableViewController.swift in Sources */,
 				3EB068BC1EAD49EE009F9750 /* AppDelegate.swift in Sources */,
 			);
@@ -525,6 +525,7 @@
 				3EB068E21EAD49EE009F9750 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EB068E31EAD49EE009F9750 /* Build configuration list for PBXNativeTarget "ManagementEventTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +534,7 @@
 				3EB068E51EAD49EE009F9750 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EB068E61EAD49EE009F9750 /* Build configuration list for PBXNativeTarget "ManagementEventUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +543,7 @@
 				3EB068E81EAD49EE009F9750 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

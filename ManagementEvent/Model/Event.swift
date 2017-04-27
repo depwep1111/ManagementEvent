@@ -12,16 +12,16 @@ import UIKit
 
 // Represents a generic product. Need an image named "default"
 
-class Product // su kien
+class Event // su kien
 {
     var title: String
-    var description: String
+    var content: String
 
     
-    init(titled: String, description: String)
+    init(titled: String, content: String)
     {
         self.title = titled
-        self.description = description
+        self.content = content
         
     }
 }
