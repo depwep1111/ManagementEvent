@@ -8,11 +8,13 @@ class EventLine
     // Variables
     var name: String            //Ngay trong tuan
     var events: [Event]     // cac su kien
+    var dates: String       // Ngay tuong ung
     
-    init(named: String, includeEvents: [Event])
+    init(named: String, includeEvents: [Event], date: String)
     {
         name = named
         events = includeEvents
+        dates = date
     }
     
     class func eventLines() -> [EventLine]
@@ -21,6 +23,9 @@ class EventLine
     }
     
     // Private methods
+    
+    
+    
     
     private class func Monday() -> EventLine { // lich thu 2
         
@@ -31,7 +36,7 @@ class EventLine
         events.append(Event(titled: "Di Choi", content: "Di choi da banh"))
         events.append(Event(titled: "Hoc them", content: "Hoc them toan"))
         events.append(Event(titled: "Hoc them", content: "Hoc them ly"))
-        return EventLine(named: "Monday", includeEvents: events)
+        return EventLine(named: "Monday", includeEvents: events, date: "Thu Hai")
     }
     private class func Tuesday() -> EventLine { // lich thu 3
     
@@ -44,7 +49,7 @@ class EventLine
         events.append(Event(titled: "Hoc them", content: "Hoc them toan"))
         events.append(Event(titled: "Di sieu thi", content: "Di sieu thi mua mi tom"))
         events.append(Event(titled: "Di sinh nhat", content: "Di sinh nhat ban vao buoi toi"))
-        return EventLine(named: "Tuesday", includeEvents: events)
+        return EventLine(named: "Tuesday", includeEvents: events, date: "Thu Ba")
     }
     private class func Wednesday() -> EventLine { // lich thu 4
         
@@ -56,7 +61,7 @@ class EventLine
         events.append(Event(titled: "Hoc them", content: "Hoc them toan"))
         events.append(Event(titled: "Ve que", content: "Ve que ngoai choi"))
         events.append(Event(titled: "Lam tu thien", content: "Di gap cac tre em ngheo hieu hoc"))
-        return EventLine(named: "Wednesday", includeEvents: events)
+        return EventLine(named: "Wednesday", includeEvents: events, date: "Thu Tu")
     }
     private class func Thursday() -> EventLine{ // lich thu 5
         
@@ -67,7 +72,7 @@ class EventLine
         events.append(Event(titled: "Di Choi", content: "Di choi da banh"))
         events.append(Event(titled: "Hoc them", content: "Hoc them toan"))
         events.append(Event(titled: "Thsm gia hoi thao", content: "Tham gia hoi thao o truong"))
-        return EventLine(named: "Thursday", includeEvents: events)
+        return EventLine(named: "Thursday", includeEvents: events, date: "Thu Nam")
     }
     private class func Friday() -> EventLine { // lich thu 6
        
@@ -79,7 +84,7 @@ class EventLine
         events.append(Event(titled: "Hoc them", content: "Hoc them toan"))
         events.append(Event(titled: "Hoc nhom", content: "TThao luan lam bai tap ios voi nhom"))
         events.append(Event(titled: "Gap TA", content: "Gap TA o truong de hoi ve cac thac mac"))
-        return EventLine(named: "Friday", includeEvents: events)
+        return EventLine(named: "Friday", includeEvents: events, date: "Thu Sau")
     }
     private class func Saturday() -> EventLine { // lich thu 7
        
@@ -90,7 +95,7 @@ class EventLine
         events.append(Event(titled: "Di Choi", content: "Di choi da banh"))
         events.append(Event(titled: "Hoc them", content: "Hoc them toan"))
         events.append(Event(titled: "Thsm gia hoi thao", content: "Tham gia hoi thao o truong"))
-        return EventLine(named: "Saturday", includeEvents: events)
+        return EventLine(named: "Saturday", includeEvents: events, date: "Thu Bay")
     }
     private class func Sunday() -> EventLine { // lich chu nhat
         
@@ -101,6 +106,6 @@ class EventLine
         events.append(Event(titled: "Di Choi", content: "Di choi da banh"))
         events.append(Event(titled: "Hoc them", content: "Hoc them toan"))
         events.append(Event(titled: "Gap mat ban be", content: "Gap lai nhung ban cu thoi hoc sinh"))
-        return EventLine(named: "Sunday", includeEvents: events)
+        return EventLine(named: "Sunday", includeEvents: events, date: "Chu Nhat")
     }}
 
